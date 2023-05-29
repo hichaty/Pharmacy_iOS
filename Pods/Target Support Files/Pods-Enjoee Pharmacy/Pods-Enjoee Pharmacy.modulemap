@@ -1,0 +1,6 @@
+framework module Pods_Enjoee_Pharmacy {
+  umbrella header "Pods-Enjoee Pharmacy-umbrella.h"
+
+  export *
+  module * { export * }
+}

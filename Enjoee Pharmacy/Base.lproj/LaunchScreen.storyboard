@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5OA-kB-58i">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="images" translatesAutoresizingMaskIntoConstraints="NO" id="5Xj-gv-w2l">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EnjoyeeLogo " translatesAutoresizingMaskIntoConstraints="NO" id="2Lx-Vs-E5r">
+                                        <rect key="frame" x="13" y="189" width="349" height="289"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="2Lx-Vs-E5r" secondAttribute="height" multiplier="314:260" id="bVZ-j3-3qR"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EnjoyeeBottom " translatesAutoresizingMaskIntoConstraints="NO" id="J2i-KZ-lqP">
+                                        <rect key="frame" x="67.5" y="577" width="240" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="T9z-GI-q8f"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="J2i-KZ-lqP" secondAttribute="bottom" constant="20" id="6Dj-yJ-r31"/>
+                                    <constraint firstItem="J2i-KZ-lqP" firstAttribute="width" secondItem="5OA-kB-58i" secondAttribute="width" multiplier="0.64" id="D4m-xT-5RW"/>
+                                    <constraint firstItem="2Lx-Vs-E5r" firstAttribute="width" secondItem="5OA-kB-58i" secondAttribute="width" multiplier="0.93" id="M1X-Wl-DV9"/>
+                                    <constraint firstAttribute="trailing" secondItem="5Xj-gv-w2l" secondAttribute="trailing" id="Rb1-qc-AQ9"/>
+                                    <constraint firstItem="2Lx-Vs-E5r" firstAttribute="centerY" secondItem="5OA-kB-58i" secondAttribute="centerY" id="TXQ-ix-WIs"/>
+                                    <constraint firstAttribute="bottom" secondItem="5Xj-gv-w2l" secondAttribute="bottom" id="WFJ-Xy-b8I"/>
+                                    <constraint firstItem="J2i-KZ-lqP" firstAttribute="centerX" secondItem="5OA-kB-58i" secondAttribute="centerX" id="cTD-eI-bjC"/>
+                                    <constraint firstItem="2Lx-Vs-E5r" firstAttribute="centerX" secondItem="5OA-kB-58i" secondAttribute="centerX" id="t1f-mC-uPs"/>
+                                    <constraint firstItem="5Xj-gv-w2l" firstAttribute="top" secondItem="5OA-kB-58i" secondAttribute="top" id="u9W-0z-lwO"/>
+                                    <constraint firstItem="5Xj-gv-w2l" firstAttribute="leading" secondItem="5OA-kB-58i" secondAttribute="leading" id="xch-A7-ueq"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5OA-kB-58i" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Ds7-Gq-ehf"/>
+                            <constraint firstItem="5OA-kB-58i" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Thm-GL-zvR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5OA-kB-58i" secondAttribute="bottom" id="ayj-pq-0C7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5OA-kB-58i" secondAttribute="trailing" id="jI6-5Q-Y0M"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="EnjoyeeBottom " width="294.5" height="72"/>
+        <image name="EnjoyeeLogo " width="402.5" height="385.5"/>
+        <image name="images" width="428" height="926"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

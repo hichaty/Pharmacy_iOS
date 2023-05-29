@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="epe-11-cxW" customClass="CategoryView" customModule="Enjoee_Pharmacy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Ad-Jr-1kI">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.30331374235474007" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="lhM-QO-IRF" appends="YES" id="R7F-Ag-Okk"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EG7-Wc-BCu">
+                    <rect key="frame" x="80" y="252" width="240" height="316"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="phU-9n-2qL">
+                            <rect key="frame" x="0.0" y="0.0" width="240" height="316"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <outlet property="dataSource" destination="epe-11-cxW" id="aeG-IY-pm8"/>
+                                <outlet property="delegate" destination="epe-11-cxW" id="24N-ei-sfN"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="phU-9n-2qL" secondAttribute="trailing" id="D3X-jf-VWk"/>
+                        <constraint firstItem="phU-9n-2qL" firstAttribute="top" secondItem="EG7-Wc-BCu" secondAttribute="top" id="GzJ-x0-DOF"/>
+                        <constraint firstAttribute="bottom" secondItem="phU-9n-2qL" secondAttribute="bottom" id="Mbc-YU-fCP"/>
+                        <constraint firstItem="phU-9n-2qL" firstAttribute="leading" secondItem="EG7-Wc-BCu" secondAttribute="leading" id="VBa-xc-MPz"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="sht-dk-L3L"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="9Ad-Jr-1kI" firstAttribute="leading" secondItem="sht-dk-L3L" secondAttribute="leading" id="8hL-oZ-tSH"/>
+                <constraint firstItem="sht-dk-L3L" firstAttribute="bottom" secondItem="EG7-Wc-BCu" secondAttribute="bottom" id="RQ2-Ki-T8l"/>
+                <constraint firstItem="9Ad-Jr-1kI" firstAttribute="top" secondItem="epe-11-cxW" secondAttribute="top" id="Ujd-Um-n74"/>
+                <constraint firstItem="sht-dk-L3L" firstAttribute="trailing" secondItem="EG7-Wc-BCu" secondAttribute="trailing" id="eRU-MA-sc4"/>
+                <constraint firstAttribute="bottom" secondItem="9Ad-Jr-1kI" secondAttribute="bottom" id="lJi-Qg-4YI"/>
+                <constraint firstItem="EG7-Wc-BCu" firstAttribute="width" secondItem="sht-dk-L3L" secondAttribute="width" multiplier="0.75" id="oxf-d8-Cuh"/>
+                <constraint firstItem="EG7-Wc-BCu" firstAttribute="top" secondItem="sht-dk-L3L" secondAttribute="top" constant="252" id="va5-mc-XwN"/>
+                <constraint firstItem="sht-dk-L3L" firstAttribute="trailing" secondItem="9Ad-Jr-1kI" secondAttribute="trailing" id="yDo-uZ-dba"/>
+            </constraints>
+            <connections>
+                <outlet property="tableViewMenu" destination="phU-9n-2qL" id="Rao-xs-8CH"/>
+            </connections>
+            <point key="canvasLocation" x="157" y="-221"/>
+        </view>
+        <tapGestureRecognizer id="lhM-QO-IRF">
+            <connections>
+                <action selector="hideMenu:" destination="epe-11-cxW" id="Lpm-8X-ndP"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
